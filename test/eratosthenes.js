@@ -4,15 +4,15 @@ import {primes} from "./test-primes";
 
 describe('Sieve of Eratosthenes', () => {
   it("should correctly identify primes up to 10", () =>
-    expect([...eratosthenes(10)]).to.have.members(primes(10))
+    expect(eratosthenes(10)).to.have.members(primes(10))
   );
 
   it("should correctly identify primes up to 100", () =>
-    expect([...eratosthenes(100)]).to.have.members(primes(100))
+    expect(eratosthenes(100)).to.have.members(primes(100))
   );
 
   it("should correctly identify primes up to 1000", () =>
-    expect([...eratosthenes(1000)]).to.have.members(primes(1000))
+    expect(eratosthenes(1000)).to.have.members(primes(1000))
   );
 
   it("should call supplied callback with correct values in the correct order", () => {

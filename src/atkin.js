@@ -104,5 +104,5 @@ export function atkin(n, toggle) {
     }
   }
 
-  return sieve;
+  return [...sieve];
 };

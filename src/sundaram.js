@@ -1,19 +1,20 @@
-import "babel-polyfill";
 import {build} from './sieve';
 import {range} from './iterators';
 
 /**
  * find values k up to n, such that k = i + j + 2ij
  */
-function* candidates(n) {
-  var i = 0;
-  var j = 0;
+function candidates(n) {
+  let i = 0;
+  let j = 0;
+  let results = new Set();
   while (++j*3 <= n-1) {
     while (++i <= j && i+j+2*i*j <= n) {
-      yield i+j+2*i*j;
+      results.add(i+j+2*i*j);
     }
     i = 0;
   }
+  return results;
 }
 
 export function sundaram(n, toggle) {
@@ -29,5 +30,5 @@ export function sundaram(n, toggle) {
     primes.add(2*entry+1);
   }
 
-  return primes;
+  return [...primes];
 };
