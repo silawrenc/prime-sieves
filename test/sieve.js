@@ -1,6 +1,6 @@
 import {expect} from "chai";
 import {build} from "../src/sieve";
-import {range as r} from "../src/generators";
+import {range as r} from "../src/iterators";
 
 describe("Sieve object behaviour", () => {
     it("should return a full results set initially", () => {

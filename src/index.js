@@ -7,7 +7,7 @@ export {eratosthenes} from "./eratosthenes";
 export {sundaram} from "./sundaram";
 
 export default {
-  atkin: atkin,
-  eratosthenes: eratosthenes,
-  sundaram: sundaram
+  atkin,
+  eratosthenes,
+  sundaram
 };

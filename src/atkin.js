@@ -1,5 +1,5 @@
 import {build} from './sieve';
-import {multiples} from './generators';
+import {multiples} from './iterators';
 
 /**
  * find values such that v%60 is a member of `remainders`,

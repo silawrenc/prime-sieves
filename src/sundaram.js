@@ -1,6 +1,6 @@
 import "babel-polyfill";
 import {build} from './sieve';
-import {range} from './generators';
+import {range} from './iterators';
 
 /**
  * find values k up to n, such that k = i + j + 2ij

@@ -1,5 +1,5 @@
 import {build} from './sieve';
-import {multiples, range} from './generators';
+import {multiples, range} from './iterators';
 
 export function eratosthenes(n, toggle) {
   var sieve = build(range(2, n), toggle);
