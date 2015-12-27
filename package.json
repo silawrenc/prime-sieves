@@ -1,6 +1,6 @@
 {
   "name": "prime-sieves",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Implementation of various prime sieves in javascript with hooks for a sieving callback",
   "main": "lib/index.js",
   "scripts": {
